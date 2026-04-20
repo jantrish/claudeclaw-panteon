@@ -1,0 +1,11 @@
+{
+  "model": "opus",
+  "security": {
+    "level": "full"
+  },
+  "timezone": "YOUR_TIMEZONE",
+  "timezoneOffsetMinutes": 0,
+  "memory": {
+    "enabled": true
+  }
+}

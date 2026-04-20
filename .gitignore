@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment — never commit API keys
+.env
+
+# Runtime data — NEVER commit. Contains WhatsApp/Slack messages,
+# session tokens, conversation logs, and database files.
+store/*.db
+store/*.db-shm
+store/*.db-wal
+store/*.log
+store/*.pid
+store/*.sqlite
+
+# Workspace - user content
+workspace/
+!workspace/.gitkeep
+
+# Migration state — local only
+migrations/.applied.json
+
+# Backups — local only, contains .env with secrets
+backups/
+
+# Output — generated files
+output/*.pdf
+output/*.html
+
+# Memory — personal data
+.claudeclaw/memory/core/*
+.claudeclaw/memory/decisions/*
+!.claudeclaw/memory/core/.gitkeep
+!.claudeclaw/memory/decisions/.gitkeep
+
+# Logs
+*.log
+/tmp/claudeclaw.*
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.wwebjs_cache/
+
+# Personal scripts — not for sharing
+scripts/waste-reminder.sh
+
+# Personal config overrides (if user creates their own outside the repo)
+# NOTE: agent CLAUDE.md and agent.yaml ARE tracked — they define the team
+
+# Build artifacts (dotnet)
+**/bin/
+**/obj/

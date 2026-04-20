@@ -1,0 +1,35 @@
+name: Tvashtar
+description: Программист-перфекционист - веб-разработка, приложения, API, архитектура, рефакторинг, тесты
+
+telegram_bot_token_env: TVASHTAR_BOT_TOKEN
+
+model: claude-opus-4-6
+
+dashboard_port: 3145
+
+# Скиллы разработчика
+skills:
+  # Ядро программиста
+  - systematic-debugging    # методичная отладка
+  - quality-check           # ОТК перед сдачей
+  - writing-plans           # планирование реализации
+  - deep-research-pro       # исследование технологий
+  - brainstorming           # мозговой штурм
+  - gemini                  # быстрые вопросы по документации
+  # Специализированные
+  - test-runner             # запуск и анализ тестов
+  - code-review             # ревью кода, антипаттерны
+  - dep-audit               # аудит зависимостей
+  - git-wizard              # сложные git-операции
+  - perf-profiler           # профилирование производительности
+  # Вспомогательные
+  - audit-website           # аудит сайтов
+  - excalidraw              # схемы архитектуры
+  - subagent-runner         # параллельные подзадачи
+  - subagent-coordinator    # координация субагентов
+  - memory-master           # работа с памятью
+  - minimax-docx
+  - minimax-pdf
+  - minimax-xlsx
+  - pptx-generator
+  - content-pipeline        # конвейер контента
