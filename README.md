@@ -433,59 +433,6 @@ claudeclaw-pantheon/
 
 ---
 
-## Как добавить второго агента
-
-Когда будешь готов расти - добавляй новых агентов:
-
-### Способ 1: Интерактивно
-```bash
-npm run agent:create
-```
-
-### Способ 2: Вручную
-
-1. Скопируй шаблон:
-```bash
-cp -r agents/_template agents/manas
-```
-
-2. Создай `agents/manas/agent.yaml`:
-```yaml
-name: Manas
-description: Быстрый исполнитель рутинных задач
-telegram_bot_token_env: MANAS_BOT_TOKEN
-model: claude-haiku-4-5
-dashboard_port: 3143
-skills:
-  - systematic-debugging
-  - minimax-pdf
-  - minimax-docx
-```
-
-3. Создай `agents/manas/CLAUDE.md` с характером и инструкциями агента.
-
-4. Создай бота в @BotFather, добавь токен в `.env`:
-```env
-MANAS_BOT_TOKEN=новый_токен_от_BotFather
-```
-
-5. Запусти:
-```bash
-npm run agent:start manas
-```
-
-### Рекомендуемая команда (Пантеон)
-
-| Агент | Роль | Модель | Стоимость |
-|-------|------|--------|-----------|
-| **Индра** | Координатор | Opus | $$$ (сложные задачи) |
-| **Манас** | Исполнитель | Haiku | $ (быстро и дёшево) |
-| **Кама** | Маркетолог | Sonnet | $$ (контент, тренды) |
-| **Тваштар** | Программист | Opus | $$$ (код, архитектура) |
-| **Дхарма** | ОТК / Юрист | Sonnet | $$ (проверки, документы) |
-
----
-
 ## Память и Hive Mind
 
 Все агенты делят **одну SQLite базу** (`store/claudeclaw.db`).
@@ -536,12 +483,6 @@ VALUES ('tvashtar', '123456', 'code_written', 'Написал API модуль a
 - `claude-opus-4-6` - самая мощная, лучший код
 - `claude-sonnet-4-20250514` - баланс скорость/качество
 - `claude-haiku-4-5` - максимально быстрая и дешёвая
-
-### Координатор (для мультиагентности)
-Когда добавишь координатора:
-- Скопируй `CLAUDE.md.example` в `~/.claudeclaw/CLAUDE.md`
-- Настрой характер координатора
-- `npm start` запустит координатора отдельно от агентов
 
 ---
 
@@ -631,8 +572,7 @@ npm run build
 
 ## Ссылки
 
-- Telegram канал: [YOUR_TELEGRAM_CHANNEL]
-- Чат: [YOUR_COMMUNITY_LINK]
+- Telegram канал: [@jantrish](https://t.me/jantrish)
 - Основа: [ClaudeClaw](https://github.com/earlyaidopters/claudeclaw)
 
 ---
